@@ -3,7 +3,10 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Roulette from './components/Roulette';
 import Blackjack from './components/Blackjack';
-import Home from './components/Home'; // Import the Home component
+import Home from './components/Home';
+import Cashier from './components/Cashier';
+import Sports from './components/Sports';
+import SlotMachine from './components/SlotMachine';
 
 function App() {
   useEffect(() => {
@@ -26,10 +29,12 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} /> {/* Add this line */}
+        <Route path="/" element={<Home />} />
         <Route path="/roulette" element={<Roulette />} />
         <Route path="/blackjack" element={<Blackjack />} />
-        {/* Add more routes as needed */}
+        <Route path="/cashier" element={<Cashier />} />
+        <Route path="/sports" element={<Sports />} />
+        <Route path="/slot-machine" element={<SlotMachine />} />
       </Routes>
     </Router>
   );

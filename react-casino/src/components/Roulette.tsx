@@ -43,7 +43,7 @@ const Roulette: React.FC = () => {
             isSpinning ? styles.spinning : ''
           }`}
           style={{
-            backgroundImage: `url(/roulette-wheel.jpg)`,
+            backgroundImage: `url(/roulette-wheel.png)`,
             width: '400px',
             height: '400px',
             transform: `rotate(${rotationAngle.current}deg)`,
